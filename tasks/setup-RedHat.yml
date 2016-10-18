@@ -8,6 +8,6 @@
 
 - name: Start Cups
   service:
-    name: {{ cups_daemon_name }}
+    name: "{{ cups_daemon_name }}"
     state: started
     enabled: yes
