@@ -45,7 +45,7 @@ script:
   - 'docker exec --tty "$(cat ${container_id})" env TERM=xterm which cupsd'
 
   # Check if cups is running
-  - 'docker exec --tty "$(cat ${container_id})" env TERM=xterm system status cups'
+  # TODO
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
