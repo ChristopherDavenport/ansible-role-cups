@@ -1,7 +1,6 @@
 ---
 - name: Include OS-specific variables.
   include_vars: "{{ ansible_os_family }}.yml"
-  when: ansible_distribution != 'Fedora'
 
 - name: Define cups_packages.
   set_fact:
@@ -11,7 +10,9 @@
 # Install Tasks
 
 - include: setup-RedHat.yml
+  static: no
   when: ansible_os_family == 'RedHat'
 
 - include: setup=Debian.yml
+  static: no
   when: ansible_os_family == 'Debian'
