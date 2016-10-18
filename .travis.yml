@@ -41,5 +41,11 @@ script:
     && (echo 'Idempotence test: pass' && exit 0)
     || (echo 'Idempotence test: fail' && exit 1)
 
+  # Ensure that Cups Is Installed
+  - 'docker exec --tty "$(cat ${container_id})" env TERM=xterm which cupsd'
+
+  # Check if cups is running
+  - 'docker exec --tty "$(cat ${container_id})" env TERM=xterm system status cups'
+
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
