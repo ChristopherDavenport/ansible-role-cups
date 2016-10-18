@@ -1,0 +1,12 @@
+---
+# Cups Packages For RedHat/CentOS 6
+
+cups_daemon_name: cups
+
+__cups_packages:
+  - cups
+  - cups-lpd
+  - cups-libs
+  - foomatic
+  - foomatic-db
+  - foomatic-db-ppds

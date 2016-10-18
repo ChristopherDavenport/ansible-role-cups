@@ -1,10 +1,12 @@
 ---
-- name: Include OS-specific variables.
-  include_vars: "{{ ansible_os_family }}.yml"
+- name: Include version-specific variables for RedHat.
+  include_vars: "{{ ansible_os_family }}-{{ ansible_lsb.major_realease|int }}.yml"
+  when: ansible_os_family == "RedHat" and ansible_lsb.major_release|int >= 6
 
 - name: Include version-specific variables for Ubuntu.
-  include_vars: "Debian.yml"
+  include_vars: "{{ ansible_distribution }}-{{ ansible_distribution_version }}.yml"
   when: ansible_distribution == 'Ubuntu'
+
 
 - name: Define cups_packages.
   set_fact:
@@ -17,6 +19,6 @@
   static: no
   when: ansible_os_family == 'RedHat'
 
-- include: setup=Debian.yml
+- include: setup-Debian.yml
   static: no
   when: ansible_os_family == 'Debian'
