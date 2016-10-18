@@ -3,5 +3,5 @@
 - name: restart cups
   become: yes
   service:
-    name: cups
+    name: "{{ cups_daemon_name }}"
     state: restarted

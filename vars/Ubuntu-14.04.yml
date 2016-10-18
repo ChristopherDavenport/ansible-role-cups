@@ -1,5 +1,6 @@
 ---
 # Cups Packages
+cups_daemon_name: cups
 
 __cups_packages:
   - cups
@@ -7,10 +8,8 @@ __cups_packages:
   - cups-common
   - cups-daemon
   - cups-filters
-  - foomatic
   - foomatic-db
   - foomatic-db-engine
-  - foomatic-db-compressed-ppds
-  - foomatic-filters
   - hplip
+  - hpijs-ppds
   - enscript
