@@ -6,7 +6,6 @@ __cups_packages:
   - cups
   - cups-client
   - cups-common
-  - cups-daemon
   - cups-filters
   - foomatic-db
   - foomatic-db-engine
