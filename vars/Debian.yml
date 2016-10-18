@@ -1,0 +1,16 @@
+---
+# Cups Packages
+
+__cups_packages:
+  - cups
+  - cups-client
+  - cups-common
+  - cups-daemon
+  - cups-filters
+  - foomatic
+  - foomatic-db
+  - foomatic-db-engine
+  - foomatic-db-compressed-ppds
+  - foomatic-filters
+  - hplip
+  - enscript

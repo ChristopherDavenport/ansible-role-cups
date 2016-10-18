@@ -1,0 +1,19 @@
+---
+# Cups Packages
+
+__cups_packages:
+  - cups
+  - cups-client
+  - cups-lpd
+  - cups-libs
+  - cups-filters
+  - cups-filters-libs
+  - foomatic
+  - foomatic-db
+  - foomatic-db-ppds
+  - foomatic-filters
+  - hpijs
+  - hplip
+  - hplip-common
+  - hplip-libs
+  - enscript
