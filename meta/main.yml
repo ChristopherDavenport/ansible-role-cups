@@ -14,7 +14,7 @@ galaxy_info:
         - 7
     - name: Ubuntu
       versions:
-        - xerus
-        - tahr
+        - all
   categories:
     - system
+    - printing
