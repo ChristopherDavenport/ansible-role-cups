@@ -2,6 +2,10 @@
 - name: Include OS-specific variables.
   include_vars: "{{ ansible_os_family }}.yml"
 
+- name: Include version-specific variables for Ubuntu.
+  include_vars: "Debian.yml"
+  when: ansible_distribution == 'Ubuntu'
+
 - name: Define cups_packages.
   set_fact:
     cups_packages: "{{ __cups_packages | list }}"
