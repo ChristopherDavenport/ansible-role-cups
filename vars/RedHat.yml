@@ -1,6 +1,8 @@
 ---
 # Cups Packages
 
+cups_daemon_name: cups
+
 __cups_packages:
   - cups
   - cups-client

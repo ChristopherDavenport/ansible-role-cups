@@ -1,13 +1,13 @@
 ---
 - name: Ensure Cups packages are installed.
   package:
-    name: "{{item}}"
+    name: "{{ item }}"
     state: installed
   with_items: "{{ cups_packages }}"
   notify: restart cups
 
 - name: Start Cups
   service:
-    name: cups
+    name: {{ cups_daemon_name }}
     state: started
     enabled: yes
