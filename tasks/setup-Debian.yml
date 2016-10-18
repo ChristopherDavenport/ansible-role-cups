@@ -8,4 +8,10 @@
   apt:
     name: "{{ item }}"
     state: present
-  with_items: "{{ java_packages }}"
+  with_items: "{{ cups_packages }}"
+
+- name: Start Cups
+  service:
+    name: "{{ cups_daemon_name }}"
+    state: started
+    enabled: yes
