@@ -8,7 +8,6 @@ __cups_packages:
   - cups-common
   - cups-daemon
   - cups-filters
-  - foomatic
   - foomatic-db
   - foomatic-db-engine
   - foomatic-db-compressed-ppds
