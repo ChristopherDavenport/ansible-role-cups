@@ -10,8 +10,6 @@ __cups_packages:
   - cups-filters
   - foomatic-db
   - foomatic-db-engine
-  - foomatic-db-compressed-ppds
-  - foomatic-filters
   - hplip
   - hpijs-ppds
   - enscript
